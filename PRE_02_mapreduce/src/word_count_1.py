@@ -1,21 +1,11 @@
 import glob
 import os.path
 import string
-import time
 
 DATA_FOLDER = "PRE_02_mapreduce/data"
 INPUT_FOLDER = "PRE_02_mapreduce/temp/input"
 OUTPUT_FOLDER = "PRE_02_mapreduce/temp/output"
 
-
-# La carpeta input/ debe existir y estar vacia.
-# -----------------------------------------------------------------------------
-
-if os.path.exists(INPUT_FOLDER):
-    for file in glob.glob(f"{INPUT_FOLDER}/*"):
-        os.remove(file)
-else:
-    os.makedirs(INPUT_FOLDER)
 
 # La carpeta input/ debe existir y estar vacia.
 # -----------------------------------------------------------------------------
